@@ -10,7 +10,6 @@ router.get("/mockingpets", mocksController.getMascotas)
 router.get("/mockingusers", mocksController.getUsuarios)
 
 //Generar Data
-
 router.post("/generatedata", mocksController.generateData);
 
 

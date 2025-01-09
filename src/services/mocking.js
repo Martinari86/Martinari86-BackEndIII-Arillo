@@ -21,10 +21,11 @@ class MockingService {
         const mascotas = [];
         for(let i = 0;i < num; i++){
              mascotas.push({
-                name: faker.animal.dog(),
+                name: faker.animal.petName(),
                 specie: faker.animal.type(),
                 adotped: false,
                 birthDate: faker.date.past(),
+                owner: null,
                 image: "https//vis.placeholder.com/150"
 
              })

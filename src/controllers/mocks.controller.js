@@ -2,13 +2,13 @@ import MockingService from "../services/mocking.js";
 import { petsService, usersService } from '../services/index.js';
 
 const getMascotas = async (req,res) => {
-    const mascotas = await MockingService.generarMockingMascotas(100);
+    const mascotas = await MockingService.generarMockingMascotas(5);
     res.send({status:"success", payload: mascotas})
 
 }
 
 const getUsuarios = async (req,res) => {
-    const usuarios = await MockingService.generarMockingUsuarios(50);
+    const usuarios = await MockingService.generarMockingUsuarios(5);
     res.send({status:"success", payload: usuarios})
 }
 
